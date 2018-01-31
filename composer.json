@@ -1,0 +1,14 @@
+{
+    "name": "gkimball/unittestsforchris",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "authors": [
+        {
+            "name": "Grant Kimball",
+            "email": "webmaster@yourlocalwebmaster.com"
+        }
+    ],
+    "require": {}
+}
