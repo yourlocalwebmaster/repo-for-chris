@@ -25,10 +25,10 @@ class User
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->email = null;
             return null;
-        } else {
-            $this->email = $email;
-            return $email;
-        }
+        } 
+        $this->email = $email;
+        return $email;
+    
 
     }
 
