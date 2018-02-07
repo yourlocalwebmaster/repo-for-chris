@@ -7,21 +7,6 @@ class MyUnitTests extends PHPUnit\Framework\TestCase
 {
 
     protected $User;
-    
-    /**
-    * My First Unit Test in PHP
-    */
-    public function testName()
-    {
-
-        // Set the users name to John123
-        $this->User->setName( 'John1234' );
-
-        // MAke sure the 1234 get's stripped out so just John is returned.
-        $this->assertEquals( 'John' , $this->User->getProperty('name') );
-
-    }
-
 
     /**
      * Test the email stuff

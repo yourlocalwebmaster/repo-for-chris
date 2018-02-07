@@ -11,23 +11,7 @@ namespace App; // tells the autoloader where to find this.. defined in composer.
 class User
 {
     
-    private $name, $email;
-    
-    /**
-     * Setter for name prop.. could use some validation like... no integers...
-     * @param string $name The name of the user.
-     * @return string Let's return the name as well...
-     */
-    public function setName(string $name)
-    {
-
-        // TODO: make sure the $name is ONLY characters and no integers..
-
-        $this->$name = $name;
-
-        return $name;
-
-    }
+    private $email;
 
     /**
      * Setter for email prop.. Could use some validation
