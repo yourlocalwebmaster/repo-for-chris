@@ -20,6 +20,12 @@ class MyUnitTests extends PHPUnit\Framework\TestCase
         // If the email is invalid, it will still be null because it won't pass validation in the setEmail() method.
         $this->assertNull( $this->User->getProperty( 'email' ) );
 
+        // Set the users email to John1234@
+        $this->User->setEmail( 'John1234@gmail.com' );
+
+        // If the email is invalid, it will still be null because it won't pass validation in the setEmail() method.
+        $this->assertNotNull( $this->User->getProperty( 'email' ) );
+
     }
 
  

@@ -25,6 +25,12 @@ class User
 
         $this->email = $email;
 
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "\r\n" . "The email is not correct." . "\r\n";
+            $email = null;
+        }
+        $this->email = $email;
+        
         return $email;
 
     }
