@@ -21,11 +21,14 @@ class User
     public function setEmail(string $email)
     {
        
-        // TODO: Validate the EMAIL address..
-
-        $this->email = $email;
-
-        return $email;
+        // TODO: Validate the EMAIL address..        
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $this->email = null;
+            return null;
+        } else {
+            $this->email = $email;
+            return $email;
+        }
 
     }
 
